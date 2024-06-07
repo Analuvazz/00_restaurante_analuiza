@@ -1,54 +1,51 @@
-# Classe Carro
+#questão 1
 class Carro:
-    def __init__(self, modelo, cor, ano):
-        self.modelo = modelo
-        self.cor = cor
-        self.ano = ano
+def __init__(self, modelo, cor, ano):
+self.modelo = modelo
+self.cor = cor
+self.ano = ano
 
-    def __str__(self):
-        return f"Carro: {self.modelo}, Cor: {self.cor}, Ano: {self.ano}"
+def __str__(self):
+return f"Carro: {self.modelo}, Cor: {self.cor}, Ano: {self.ano}"
 
-# Criando uma instância da classe Carro
-carro1 = Carro('Fusca', 'Azul', 1972)
-print(carro1)
+carro_1 = Carro('Jeep', 'Branco', 2020)
+print(carro_1)
 
-# Classe Restaurante
+#questão 2
 class Restaurante:
-    def __init__(self, nome, categoria):
-        self.nome = nome
-        self.categoria = categoria
-        self.ativo = False
-        self.endereco = None
-        self.capacidade = 0
+def __init__(self, nome, categoria):
+self.nome = nome
+self.categoria = categoria
+self.ativo = False
+self.menu = None
+self.mesas = 0
 
-    def __str__(self):
-        return f"Restaurante: {self.nome}, Categoria: {self.categoria}, Ativo: {self.ativo}, Endereço: {self.endereco}, Capacidade: {self.capacidade}"
-
-# Criando uma instância da classe Restaurante e atribuindo valores aos seus atributos
+#questão 4
+def __str__(self):
+return f"Restaurante: {self.nome}, Categoria: {self.categoria}, Ativo: {self.ativo}, Menu: {self.menu}, Mesas: {self.mesas}"
+#questão 3
 restaurante1 = Restaurante('Praça', 'Gourmet')
-restaurante1.endereco = 'Rua das Flores, 123'
-restaurante1.capacidade = 100
+restaurante1.endereco = 'R. Uriel dos Reis, 45'
+restaurante1.capacidade = 50
 print(restaurante1)
-
-# Criando uma instância da classe Restaurante utilizando o construtor
-restaurante2 = Restaurante('La Trattoria', 'Italiana')
+#construtor
+restaurante2 = Restaurante('Francesa', 'Italiana')
 print(restaurante2)
 
-# Classe Cliente
+#questão 5
 class Cliente:
-    def __init__(self, nome, email, telefone, endereco):
-        self.nome = nome
-        self.email = email
-        self.telefone = telefone
-        self.endereco = endereco
+def __init__(self, nome, email, telefone, endereco):
+self.nome = nome
+self.email = email
+self.telefone = telefone
+self.endereco = endereco
 
-    def __str__(self):
-        return f"Cliente: {self.nome}, Email: {self.email}, Telefone: {self.telefone}, Endereço: {self.endereco}"
+def __str__(self):
+return f"Cliente: {self.nome}, Email: {self.email}, Telefone: {self.telefone}, Endereço: {self.endereco}"
 
-# Instanciando 3 objetos da classe Cliente e atribuindo valores aos seus atributos
-cliente1 = Cliente('Leticia Rompava', 'leticia@example.com', '1234-5678', 'Rua A, 100')
-cliente2 = Cliente('Eduarda Moro', 'duda@example.com', '8765-4321', 'Rua B, 200')
-cliente3 = Cliente('Bernardo', 'bernardo@example.com', '1122-3344', 'Rua C, 300')
+cliente1 = Cliente('Eduarda Moro', 'eduarda.moro@escola.pr.gov.br', '1111-2222', 'Rua 1, 10')
+cliente2 = Cliente('Heloise de Castro', 'heloise.castro@escola.pr.gov.br', '3333-4444', 'Rua 2, 20')
+cliente3 = Cliente('Maria Jacomasso', 'maria.jacomasso@escola.pr.gov.br', '5555-6666', 'Rua 3, 30')
 
 print(cliente1)
 print(cliente2)
