@@ -3,10 +3,8 @@ class Restaurante:
     nome=''
     categoria=''
     ativo=False
-
-restaurante_praca=Restaurante()
 # questão 2/5
-restaurante_praca.nome='Bistrô'
+restaurante_praca='Bistrô'
 
 # questão 1
 restaurante_praca.categoria='Italiana'
